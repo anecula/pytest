@@ -1,5 +1,5 @@
 
 sut:
    build: .
-   command: ls /usr/local/bin
+   command: python  /usr/local/bin/web-page-screenshot.py
 
