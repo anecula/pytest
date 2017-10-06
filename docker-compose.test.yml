@@ -1,6 +1,6 @@
 
 sut:
    build: .
-   command: python web-page-screenshot.py
+   command: web-page-screenshot.py
 
 
