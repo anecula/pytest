@@ -1,6 +1,6 @@
 
 sut:
    build: .
-   command: web-page-screenshot.py
+   command: echo "test"
 
 
