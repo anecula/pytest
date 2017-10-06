@@ -1,8 +1,4 @@
 
--sut:
- -  build: .
- -  command: web-page-screenshot.py
-
 selenium-hub:
   image: selenium/hub
   ports:
