@@ -6,4 +6,4 @@ FROM selenium/base:3.5.3-boron
 #========================
 
 EXPOSE 4444
-VOLUME /web-page-screenshot.py
+COPY web-page-screenshot.py  /usr/local/bin/
