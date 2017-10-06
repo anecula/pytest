@@ -16,6 +16,4 @@ firefox:
       - selenium-hub:hub
       
       
- sut:
-   build: .
-   command: docker ps
+
