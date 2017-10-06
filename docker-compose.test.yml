@@ -16,6 +16,3 @@ firefox:
       - selenium-hub:hub
 
 
-sut:
-  build: .
-  command: web-page-screenshot.py
