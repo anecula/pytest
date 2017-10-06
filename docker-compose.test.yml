@@ -1,5 +1,5 @@
 
 sut:
    build: .
-   command: docker ps
+   command: ls /usr/local/bin
 
