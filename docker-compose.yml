@@ -14,3 +14,8 @@ firefox:
     image: selenium/node-firefox
     links:
       - selenium-hub:hub
+      
+      
+ sut:
+   build: .
+   command: python web-page-screenshot.py
