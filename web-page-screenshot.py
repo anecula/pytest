@@ -8,11 +8,19 @@ import datetime
 from datetime import datetime
 
 
+HUB_HOST = os.environ.get('HUB_HOST')
+HUB_PORT = os.environ.get('HUB_PORT')
+
+EXECUTOR = 'http://{host}:{port}/wd/hub'.format(host=HUB_HOST, port=HUB_PORT)
+
+print(EXECUTOR)
+
+
 chrome = webdriver.Remote(
-          command_executor='http://localhost:4444/wd/hub',
+          command_executor=EXECUTOR,
           desired_capabilities=DesiredCapabilities.CHROME)
 firefox = webdriver.Remote(
-          command_executor='http://localhost:4444/wd/hub',
+          command_executor=EXECUTOR,
           desired_capabilities=DesiredCapabilities.FIREFOX)
 
 chrome.get('https://www.google.com')

@@ -14,6 +14,13 @@ firefox:
     image: selenium/node-firefox
     links:
       - selenium-hub:hub
-      
-      
 
+sut:
+    image: testpy:local
+    links:
+      - selenium-hub
+    tty: true
+    stdin_open: true
+    environment:
+      HUB_HOST: "selenium-hub"
+      HUB_PORT: "4444"
